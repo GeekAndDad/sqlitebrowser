@@ -374,6 +374,8 @@ ExtendedTableWidget::ExtendedTableWidget(QWidget* parent) :
     connect(printAction, &QAction::triggered, [&]() {
        openPrintDialog();
     });
+
+    setWordWrap(false);
 }
 
 void ExtendedTableWidget::reloadSettings()
